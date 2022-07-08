@@ -28,7 +28,7 @@ import org.springframework.web.bind.annotation.RestController;
 /*habilita a minha API para receber requisições de qualquer porta.
 o Spring abre na 8080, e o framework do front end pode abrir em outra 
 (o React abre na 3000)*/
-@CrossOrigin(origins="*", allowedHeaders="*")// ou se quiser pode deixar assim:@CrossOrigin(origins="*")
+@CrossOrigin("*")// ou se quiser pode deixar assim:@CrossOrigin(origins="*")
 
 public class PostagemController {
 	
